@@ -1,15 +1,12 @@
-nes (15 sloc)  229 Bytes
-
 #include "main.h"
-
 /**
- * _islower - checks lowercase characters
- * @c: is the int value argument of the function
- * Return: always 0
+ * _isalpha - checks if c is a letter, lower or uppercase
+ * @c: function take int c as argument
+ * Return: 0
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
